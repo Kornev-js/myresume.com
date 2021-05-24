@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>registration form</title>
+    <link rel="stylesheet" href="regForm.css">
+</head>
+<?php include "./navigation.php"; ?>
+<body>
+<div class="form">
+    <form action="#" class="form__body">
+        <div class="title">
+       <div class="line"><hr size="4"></div>
+        <h1 class="formName">Register</h1>
+            <div class="line"><hr size="4"></div>
+
+        </div>
+        <p>Create your account.It's free and only takes a minute</p>
+        <div class="name">
+        <div class="form__item">
+            <label for="formName" class="formLabel"></label>
+            <input id="formName"  type="text" name="lastName" class="form__input-name _req" placeholder="First Name">
+        </div>
+        <div class="form__item">
+            <label for="formSurname" class="formLabel"></label>
+            <input id="formSurname"  type="text" name="lastName" class="form__input-name _req" placeholder="Last Name">
+        </div>
+        </div>
+        <div class="form__item">
+            <label for="formEmail" class="formLabel"></label>
+            <input id="formEmail"  type="email" name="email" class="form__input _req" placeholder="Email">
+        </div>
+        <div class="form__item">
+            <label for="formPassword" class="formLabel"></label>
+            <input id="formPassword"  type="password" name="password" class="form__input _req" placeholder="Password">
+        </div>
+        <div class="form__item">
+            <label for="formConfPassword" class="formLabel"></label>
+            <input id="formConfPassword"  type="password" name="password" class="form__input _req" placeholder="Confirm Password">
+        </div>
+        <div class="form__item">
+            <div class="checkbox">
+                <input id="formAgreement" required  type="checkbox" name="agreement" class="checkbox__input _req">
+                <label for="formAgreement" class="checkbox__label">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a> </label>
+            </div>
+        </div>
+        <button type="submit" class="form__button">Register Now</button>
+    </form>
+    <p class="Registered">Already have an account? <a href="logForm.html">Sign in</a> </p>
+</div>
+
+</body>
+</html>
