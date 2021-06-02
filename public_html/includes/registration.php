@@ -1,7 +1,7 @@
 <?php
-session_start();
-require_once 'connect.php';
-session_start();
+//session_start();
+//require_once 'connect.php';
+//session_start();
 
 $userName = $_POST['lastName'];
 $userSurname = $_POST['firstName'];

@@ -110,3 +110,54 @@ function isPassContains(password) {
 //     addToObject();
 //
 // }
+function addItems() {
+
+
+let addSelect = document.createElement('select');
+addSelect.setAttribute('id', 'addSelect');
+let addInput = document.createElement('input');
+addInput.setAttribute('id', 'addInput');
+
+ let addingParent = document.querySelector('.noContactInputs');
+
+let addTwitter = document.createElement('option');
+addTwitter.value = 1;
+addTwitter.textContent = 'Twitter';
+
+addSelect.appendChild(addTwitter);
+
+    let addOther = document.createElement('option');
+    addOther.value = 2;
+    addOther.textContent = 'Other';
+    addOther.setAttribute('id','other');
+
+    addSelect.appendChild(addOther);
+
+    if (document.getElementById('other') === addOther) {
+
+        let otherInput = document.createElement('input');
+        addingParent.insertBefore(otherInput, addingParent.firstElementChild);
+
+
+    }
+
+
+ // addingParent.appendChild(addSelect);
+ // addingParent.appendChild(addInput);
+    addingParent.insertBefore(addInput, addingParent.firstElementChild);
+ addingParent.insertBefore(addSelect, addingParent.firstElementChild);
+
+
+}
+
+function removeItems(){
+let removeSelect = document.getElementById('addSelect');
+removeSelect.remove();
+let removeInput = document.getElementById('addInput');
+removeInput.remove();
+}
+let addBtn = document.getElementById('addButton');
+let resetBtn = document.getElementById('resetButton')
+
+addBtn.onclick = addItems;
+resetBtn.onclick = removeItems;

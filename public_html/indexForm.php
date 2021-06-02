@@ -1,8 +1,8 @@
 <?php
-session_start();
-
-
-?>
+//session_start();
+//
+//
+//?>
 
 
 <!doctype html>
@@ -56,7 +56,7 @@ session_start();
         <div class="contactsBlock">
             <div class="form__item">
                 <div class="form__label contacts">Contacts</div>
-                <select name="contact" class="select">
+                <select name="contact" class="select" ;>
                     <option value="1" >Fb</option>
                     <option value="2">Twitch</option>
                     <option value="3" selected>Vk</option>
@@ -71,15 +71,8 @@ session_start();
             <button type="reset" class="contactButton">Delete</button>
             </div>
             <div class="noContactInputs">
-            <div class="form__item-contacts">
-                <label for="noSocialNtwrk" class="formLabel"></label>
-                <input id="noSocialNtwrk" type="text" name="name" class="form__input ">
-            </div>
-            <div class="form__item-contact">
-                <label for="noSocialName" class="formLabel"></label>
-                <input id="noSocialName" type="text" name="name" class="form__input noContactName">
-            </div>
-            <button type="reset" class="contactButton2">Delete</button>
+            <button type="button"  id="addButton">Add New</button>
+                <button type="reset" id="resetButton">Reset</button>
         </div>
         </div>
 

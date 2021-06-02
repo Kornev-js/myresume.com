@@ -1,7 +1,7 @@
 <?php
-
-session_start()
-?>
+//
+//session_start()
+//?>
 
 <?php
 
@@ -10,7 +10,7 @@ require_once 'includes/connect.php';
 $query = "SELECT * FROM resume_data WHERE type = 'editable'";
 $result= mysqli_query($connect, $query) or die("error " . mysqli_error($connect));
 $content = mysqli_fetch_array($result);
-if(count($content) == 0){
+if(count($content) === 0){
     $query = "SELECT * FROM resume_data WHERE type = 'default'";
     $result= mysqli_query($connect, $query) or die("Ошибка " . mysqli_error($connect));
     $content = mysqli_fetch_array($result);

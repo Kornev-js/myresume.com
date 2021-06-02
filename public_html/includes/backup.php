@@ -3,7 +3,7 @@
 require_once 'connect.php';
 
 $host = 'localhost';
-$user = 'admin';
+$user = 'developer';
 $password = 'root';
 $database = 'my_db';
 
