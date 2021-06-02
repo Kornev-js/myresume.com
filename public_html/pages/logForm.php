@@ -1,4 +1,4 @@
-<?php  session_start() ?>
+<?php // session_start() ?>
 
 <!doctype html>
 <html lang="en">
@@ -13,7 +13,7 @@
 
 <body>
 <div class="form">
-    <form action="includes/login-ins.php" method="post">
+    <form action="../includes/login-ins.php" method="post">
         <h1>Login Form</h1>
         <div class="form__item">
             <label for="formName" class="formLabel">Login or Email</label>
@@ -25,7 +25,7 @@
         </div>
         <a href="#" class="reminder">Forgot Password?</a>
         <button type="submit" class="loginButton">Log In</button>
-        <p class="regLink">Not a member? <a href="regForm.php">Signup now</a></p>
+        <p class="regLink">Not a member? <a href="../regForm.php">Signup now</a></p>
 
     </form>
 </div>
