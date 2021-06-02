@@ -57,3 +57,13 @@ hr {
     background-color: #4ba34b;
     border-color: #4ba34b;
 }
+
+
+.msg {
+    border: 2px solid chocolate;
+    border-radius: 3px;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+
+}

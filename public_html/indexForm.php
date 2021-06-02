@@ -1,3 +1,10 @@
+<?php
+session_start();
+
+
+?>
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -9,21 +16,24 @@
     <link rel="stylesheet" href="stylesForm.css">
     <link rel="stylesheet" href="normalize.css">
 </head>
-<?php include "./navigation.php"; ?>
+
 <body>
-<div class="form">
-    <form action="#" id="form" class="form__body">
+<div class="form" >
+    <form action="#" id="form" class="form__body" method="POST">
         <div class="form__item">
             <label for="formName" class="formLabel">Name*</label>
-            <input id="formName"  type="text" name="name" class="form__input _req" placeholder="John Doe">
+            <input id="formName"  type="text" name="name" class="form__input " placeholder="John Doe">
+            <small>Error</small>
         </div>
         <div class="form__item">
             <label for="formEmail" class="formLabel">Email*</label>
-            <input id="formEmail"  type="email" name="email" class="form__input _req" placeholder="example@mail.com">
+            <input id="formEmail"  type="email" name="email" class="form__input " placeholder="example@mail.com">
+            <small>Error</small>
         </div>
         <div class="form__item">
             <label for="formPassword" class="formLabel">Password*</label>
-            <input id="formPassword"  type="password" name="password" class="form__input _req" placeholder="******">
+            <input id="formPassword"  type="password" name="password" class="form__input " placeholder="******">
+            <small>Error</small>
         </div>
         <div class="form__item"></div>
         <div class="form__title">Gender</div>
@@ -40,6 +50,7 @@
         <div class="form__item">
             <label for="formbirthdate" class="formLabel">Birthdate</label>
             <input id="formbirthdate" type="date" name="birthdate" class="form__input">
+            <small>Error</small>
         </div>
 
         <div class="contactsBlock">
@@ -84,14 +95,16 @@
         <div class="form__item">
             <label for="formHobbies" class="formLabel">Hobbies</label>
             <textarea name="hobbies" id="formHobbies" class="" placeholder="Swimming"></textarea>
+            <small>Error</small>
         </div>
         <div class="form__item">
             <label for="formWords" class="formLabel">Some words</label>
             <textarea name="some words" id="formWords" class=""></textarea>
+            <small>Error</small>
         </div>
         <div class="form__item">
             <div class="checkbox">
-                <input id="formAgreement" required checked type="checkbox" name="agreement" class="checkbox__input _req">
+                <input id="formAgreement" required checked type="checkbox" name="agreement12334" class="checkbox__input _req">
                 <label for="formAgreement" class="checkbox__label">Agreement</label>
             </div>
         </div>
@@ -100,7 +113,12 @@
 
 
     </form>
+
+
 </div>
-<script src="scriptForm.js"></script>
+<div class="innerHtml"></div>
+<script src="validation.js"></script>
+<!--<script src="scriptForm.js"></script>-->
+
 </body>
 </html>

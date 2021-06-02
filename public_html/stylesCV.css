@@ -7,62 +7,57 @@ main {
     width: 740px;
     margin: 0 auto;
     background-color: #dcdfdb86;
+
 }
 
 .wrapper{
     display: flex;
-    max-width: 700px;
-    text-align: center;
-    margin: 0 auto;
-    min-width: 700px;
+    padding: 10px;
 }
 
-
-.sidebar {
-    width: 215px;
+.sidebar{
+    flex: 1;
     background-color: #d9c3a7;
-    margin-right: 20px;
-    margin-top: 20px;
-    
-}
-.profileInformation__name{
-    background-color: rgb(39, 35, 35);
-    height: 170px;
-    color: white;
-    text-align: center;
-}
-h1 {
-    padding-top: 30px;
+    border-radius: 8px;
 }
 
-.nameOfColumn {
-    background-color: rgb(39, 35, 35);
-    color: white;
-    text-align: left;
-    padding-left: 10px;
-    width: 175px;
-    text-align: center;
+.profileInformation{
+    flex: 2;
     margin-left: 10px;
+
 }
-img {
+
+img{
     border-radius: 50%;
-    margin-top: 15px;
+    padding-top: 10px;
+}
+.sidebar__photo{
+    text-align: center;
 }
 
-li {
-    padding-bottom: 10px;
-    padding-left: 10px;
-    text-align: left;
-}
-h3 {
-    text-align: left;
-
-}
-.profileInformation__profile p {
-    text-align: left;
+.profileInformation__name{
+    background-color: black;
+    color: white;
+    padding-top: 10px;
+    text-align: center;
+    box-shadow: 2px 2px 5px black;
+    border-radius: 8px;
+    padding: 10px;
 }
 
-.profileInformation__profExperience p {
-    text-align: left;
+.nameOfColumn{
+
+    background-color: black;
+    color: white;
+    border-radius: 2px;
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
+.sidebar__contact{
+    text-align: center;
+}
+
+.sidebar__education{
+    text-align: center;
+}

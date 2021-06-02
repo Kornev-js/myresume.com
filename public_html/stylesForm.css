@@ -6,6 +6,7 @@
 .form__item {
     display: flex;
     padding-bottom: 30px;
+    position: relative;
 
 }
 .formLabel {
@@ -102,7 +103,31 @@ textarea {
     margin-left: -83px;
 }
 
+small{
+    visibility: hidden;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
 
+.form__item.error input {
+    border-color: #e75e3c;
+
+}
+
+.form__item.error small {
+    visibility: visible;
+    border-color: #e75e3c;
+    font-size: 18px;
+    color: #e75e3c;
+    margin-left: 110px;
+}
+
+
+.form__item.success input {
+    border-color: #2ecc71;
+
+}
 
 
 

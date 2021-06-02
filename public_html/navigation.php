@@ -1,3 +1,7 @@
+<?php //session_start()  ?>
+
+
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -12,17 +16,20 @@
 <body>
 <nav class = "navigation">
     <ul class="navMenu">
-        <li class="navMenu__item"><a href="logForm.php">Login</a></li>
-        <li class="navMenu__item"><a href="index.php">Resume</a></li>
-        <li class="navMenu__item"><a href="indexForm.php">Form</a></li>
-        <li class="navMenu__item"><a href="regForm.php">Regist</a></li>
-        <li class="navMenu__item"><a href="#">Icons</a></li>
-        <li class="navMenu__item"><a href="#">Docs</a></li>
-        <li class="navMenu__item"><a href="#">Support</a></li>
-        <li class="navMenu__item"><a href="#">Plans</a></li>
-        <li class="navMenu__item"><a href="">Blog</a></li>
-        <li class="navMenu__item"><a href="">Sign in</a></li>
+        <li class="navMenu__item"><a href="?tab=logForm">Login</a></li>
+        <li class="navMenu__item"><a href="?tab=CV">Resume</a></li>
+        <li class="navMenu__item"><a href="?tab=indexForm">Form</a></li>
+        <?php if(array_key_exists('user', $_SESSION)){ ?>
+            <li class="navMenu__item"><a href="?tab=regForm">Register</a></li>
+            <li class="navMenu__item"><a href="?tab=edit_form">Edit Form</a></li>
+            <li class="navMenu__item"><a href="#">Docs</a></li>
+            <li class="navMenu__item"><a href="#">Support</a></li>
+            <li class="navMenu__item"><a href="#">Plans</a></li>
+            <li class="navMenu__item"><a href="">Blog</a></li>
+        <?php } ?>
     </ul>
+
+
 </nav>
 </body>
 </html>

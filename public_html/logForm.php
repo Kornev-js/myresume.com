@@ -1,3 +1,5 @@
+<?php  session_start() ?>
+
 <!doctype html>
 <html lang="en">
 <head>
@@ -8,22 +10,22 @@
     <title>Login Form</title>
     <link rel="stylesheet" href="logForm.css">
 </head>
-<?php include "./navigation.php"; ?>
+
 <body>
 <div class="form">
-    <form action="#">
+    <form action="includes/login-ins.php" method="post">
         <h1>Login Form</h1>
         <div class="form__item">
             <label for="formName" class="formLabel">Login or Email</label>
-            <input id="formName"  type="text" name="lastName" class="form__input-name _req" placeholder="Login">
+            <input id="formName"  type="email" name="email" class="form__input-name _req" placeholder="Login">
         </div>
         <div class="form__item">
             <label for="formPass" class="formLabel">Password</label>
-            <input id="formPass"  type="password" name="lastName" class="form__input-name _req" placeholder="******">
+            <input id="formPass"  type="password" name="password" class="form__input-name _req" placeholder="******">
         </div>
         <a href="#" class="reminder">Forgot Password?</a>
         <button type="submit" class="loginButton">Log In</button>
-        <p class="regLink">Not a member? <a href="regForm.html">Signup now</a></p>
+        <p class="regLink">Not a member? <a href="regForm.php">Signup now</a></p>
 
     </form>
 </div>
