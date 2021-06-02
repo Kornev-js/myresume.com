@@ -1,4 +1,4 @@
-<?php //session_start() ?>
+<?php session_start() ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -10,7 +10,7 @@
 
 <body>
 <div class="form">
-    <form action="../includes/registration.php" class="form__body" method="post">
+    <form action="includes/registration.php" class="form__body" method="post">
         <div class="title">
        <div class="line"><hr size="4"></div>
         <h1 class="formName">Register</h1>

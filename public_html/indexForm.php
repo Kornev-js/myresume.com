@@ -1,5 +1,5 @@
 <?php
-//session_start();
+session_start();
 
 
 ?>
@@ -70,21 +70,16 @@
             </div>
             <button type="reset" class="contactButton">Delete</button>
             </div>
-<!--            <div class="noContactInputs">-->
-<!--            <div class="form__item-contacts">-->
-<!--                <label for="noSocialNtwrk" class="formLabel"></label>-->
-<!--                <input id="noSocialNtwrk" type="text" name="name" class="form__input ">-->
-<!--            </div>-->
-<!--            <div class="form__item-contact">-->
-<!--                <label for="noSocialName" class="formLabel"></label>-->
-<!--                <input id="noSocialName" type="text" name="name" class="form__input noContactName">-->
-<!--            </div>-->
-<!--            <button type="reset" class="contactButton2">Delete</button>-->
-
-            <button type="button">Add New</button>
-
-
-
+            <div class="noContactInputs">
+            <div class="form__item-contacts">
+                <label for="noSocialNtwrk" class="formLabel"></label>
+                <input id="noSocialNtwrk" type="text" name="name" class="form__input ">
+            </div>
+            <div class="form__item-contact">
+                <label for="noSocialName" class="formLabel"></label>
+                <input id="noSocialName" type="text" name="name" class="form__input noContactName">
+            </div>
+            <button type="reset" class="contactButton2">Delete</button>
         </div>
         </div>
 

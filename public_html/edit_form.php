@@ -12,7 +12,7 @@
 <body>
 
 <main>
-    <form action="../includes/editSet.php" method="post" class="editForm">
+    <form action="includes/editSet.php" method="post" class="editForm">
         <div class="wrapper">
             <div class="sidebar">
                 <div class="mainInformation">
@@ -55,11 +55,11 @@
         </div>
 
         <button class="formButtons" type="submit">Edit</button>
-        <form action="../includes/dump.php">
+        <form action="includes/dump.php">
             <button type="submit" class="dumb">Dump</button>
         </form>
 
-        <form action="../includes/backup.php">
+        <form action="includes/backup.php">
             <button type="submit" class="dumb">Back Up </button>
         </form>
 

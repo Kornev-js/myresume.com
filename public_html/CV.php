@@ -1,7 +1,7 @@
 <?php
-//
-//session_start()
-//?>
+
+session_start()
+?>
 
 <?php
 
@@ -38,7 +38,7 @@ if(count($content) == 0){
         <div class="wrapper">
             <div class="sidebar">
                 <div class="sidebar__photo">
-                    <img src="../image/IMG_0001.jpg" alt="photo" width="150" height="150">
+                    <img src="image/IMG_0001.jpg" alt="photo" width="150" height="150">
                 </div>
                 <div class="sidebar__contact">
                     <h2 class="nameOfColumn">CONTACT</h2>
