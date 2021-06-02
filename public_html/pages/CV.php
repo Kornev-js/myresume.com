@@ -25,8 +25,8 @@ if(count($content) === 0){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="stylesCV.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../stylesCV.css">
+    <link rel="stylesheet" href="../normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet"> 
 </head>
@@ -38,7 +38,7 @@ if(count($content) === 0){
         <div class="wrapper">
             <div class="sidebar">
                 <div class="sidebar__photo">
-                    <img src="image/IMG_0001.jpg" alt="photo" width="150" height="150">
+                    <img src="../image/IMG_0001.jpg" alt="photo" width="150" height="150">
                 </div>
                 <div class="sidebar__contact">
                     <h2 class="nameOfColumn">CONTACT</h2>
@@ -82,6 +82,6 @@ if(count($content) === 0){
 
 
     </main>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
 </body>
 </html>

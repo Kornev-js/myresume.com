@@ -11,7 +11,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>navMenu</title>
     <link rel="stylesheet" href="navmenu.css">
-    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="../normalize.css">
 </head>
 <body>
 <nav class = "navigation">
