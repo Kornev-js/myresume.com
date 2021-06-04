@@ -1,4 +1,4 @@
 <?php session_start();
 session_destroy();
-header("Location:../logForm.php");
+header("Location:../pages/logForm.php");
 exit();

@@ -1,6 +1,6 @@
 <?php
 //session_start();
-//require_once 'connect.php';
+require_once 'connect.php';
 //session_start();
 
 $userName = $_POST['lastName'];
@@ -17,11 +17,11 @@ if ($userPass === $userConfPass) {
 
 }else {
     $_SESSION['message'] = 'Password do not match;';
-    header('Location:../regForm.php');
+    header('Location:../pages/regForm.php');
 }
 
 
-//if (empty('$lastName') && empty('$firstName') && empty('$email') && empty('password')) {
+//if (empty($lastName) && empty($firstName) && empty($email) && empty(password)) {
 //    $_SESSION['message'] = 'Fill all fields';
 //    header('Location:../regForm.php');
 //    exit();

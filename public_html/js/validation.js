@@ -6,7 +6,7 @@ let password = document.getElementById('formPassword');
 let birthdate= document.getElementById('formbirthdate');
 let hobbies = document.getElementById('formHobbies');
 let words = document.getElementById('formWords');
-
+let today = new Date();
 form.addEventListener('submit', (e) => {
     e.preventDefault();
 
@@ -50,6 +50,18 @@ function checkInputs() {
     else {
         setSuccessFor(password);
     }
+    let b = new Date(birthdate.value);
+    console.log(today.getFullYear(), b.getFullYear())// дебаггинг
+    if((today.getFullYear() - 150) > b.getFullYear())
+    {
+        setErrorFor(birthdate,"Invalid date of birth");
+    } else if (today.getFullYear()===(b.getFullYear())&&
+        today.getMonth()===(b.getMonth())&&
+        today.getDate()===(b.getDate()) ){
+        setErrorFor(birthdate,"Wrong date of birth");
+    }   else  {
+        setSuccessFor(birthdate);
+    }
 
  }
 
@@ -83,78 +95,69 @@ function isLatin(username) {
 function isPassContains(password) {
     return /^[0-9a-zA-Z]+$/.test(password);
 }
-// function checkDate() {
-//     let inputDate = new Date(birthdate);
-//     if (+date.getFullYear()-150>(+inputDate.getFullYear())) {
-//         return
-//     }else if (+date.getFullYear()=== +inputDate.getFullYear())&&(+date.getMonth()===inputDate.getMonth())&&(+date.getDate()===(inputDate.getDate()-1)
-//
-//     //small = 'you cant be borned yesterday';
-// }
 
+//INSERTING NEW FIELDS!!!
 
-// function checkDate(){
-//     output.innerText=" ";
-//     let inputDate=new Date(birthdate.value);
-//     if(+date.getFullYear()-150>(+inputDate.getFullYear())) {
-//         // output.innerText="Wrong date(>150)";
-//         return;
-//     }
-//
-//     if(+date.getFullYear()===(+inputDate.getFullYear())&&
-//         +date.getMonth()===(+inputDate.getMonth())&&
-//         +date.getDate()===(+inputDate.getDate()) ){
-//         output.innerText="Wrong date (it cant be today)";
-//         return;
-//     }
-//     addToObject();
-//
-// }
+let mainInputsDiv = document.querySelector('.noContactInputs');
+console.log(mainInputsDiv);
 function addItems() {
 
+    let br = document.createElement('br');
 
-let addSelect = document.createElement('select');
-addSelect.setAttribute('id', 'addSelect');
-let addInput = document.createElement('input');
-addInput.setAttribute('id', 'addInput');
+    let select  = document.createElement('select');
+    select.setAttribute('id', 'select');
 
- let addingParent = document.querySelector('.noContactInputs');
+    let option1 = document.createElement('option')
+    option1.value = 'inst';
+    option1.textContent = 'Inst';
+    let option2 = document.createElement('option')
+    option2.value = 'fb';
+    option2.textContent = 'Fb';
+    let option3 = document.createElement('option')
+    option3.value = 'other';
+    option3.textContent = 'Other';
 
-let addTwitter = document.createElement('option');
-addTwitter.value = 1;
-addTwitter.textContent = 'Twitter';
+    select.appendChild(option1);
+    select.appendChild(option2);
+    select.appendChild(option3);
 
-addSelect.appendChild(addTwitter);
+    let input1 = document.createElement('input');
+    input1.setAttribute('id', 'input1')
+    input1.name = 'dynamicInput';
+    input1.style.visibility = 'hidden';
+    let input2 = document.createElement('input');
+    input2.name = 'staticInput';
 
-    let addOther = document.createElement('option');
-    addOther.value = 2;
-    addOther.textContent = 'Other';
-    addOther.setAttribute('id','other');
-
-    addSelect.appendChild(addOther);
-
-    if (document.getElementById('other') === addOther) {
-
-        let otherInput = document.createElement('input');
-        addingParent.insertBefore(otherInput, addingParent.firstElementChild);
-
-
-    }
+    input2.setAttribute('id', 'input2')
 
 
- // addingParent.appendChild(addSelect);
- // addingParent.appendChild(addInput);
-    addingParent.insertBefore(addInput, addingParent.firstElementChild);
- addingParent.insertBefore(addSelect, addingParent.firstElementChild);
+    mainInputsDiv.insertBefore(input1, mainInputsDiv.firstChild);
+    mainInputsDiv.insertBefore(input2, mainInputsDiv.firstChild);//сюда засовываем селект + 2 input text.
+    mainInputsDiv.insertBefore(select, mainInputsDiv.firstChild);
+    // 1 input style visibility hidden
+    // 2 input text
+    // if select === 'other'
+    // select.value === 'other'
+    select.addEventListener('change', function (event) {
+
+        if (select.value === 'other'){
+            input1.style.visibility = 'visible';
+        }
+
+    })
+
 
 
 }
 
 function removeItems(){
-let removeSelect = document.getElementById('addSelect');
+let removeSelect = document.getElementById('select');
 removeSelect.remove();
-let removeInput = document.getElementById('addInput');
-removeInput.remove();
+let removeInput1 = document.getElementById('input1');
+removeInput1.remove();
+    let removeInput2 = document.getElementById('input2');
+    removeInput2.remove();
+
 }
 let addBtn = document.getElementById('addButton');
 let resetBtn = document.getElementById('resetButton')

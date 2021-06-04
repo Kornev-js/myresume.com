@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="96aa3d0f-0ce2-4e48-bc61-d27df0e45168" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/css/stylesForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/stylesForm.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/login-ins.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/includes/login-ins.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/includes/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/includes/registration.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/js/logFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/logFormValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/js/regFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/regFormValidation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/validation.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/CV.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/CV.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/edit_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/edit_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/indexForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/indexForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/logForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/logForm.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/navigation.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/regForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/regForm.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="1tQbKpCERem4OLbIUy9Ux2QS3mg" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="96aa3d0f-0ce2-4e48-bc61-d27df0e45168" name="Default Changelist" comment="" />
+      <created>1622704204504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1622704204504</updated>
+      <workItem from="1622704207941" duration="5497000" />
+      <workItem from="1622710748845" duration="5686000" />
+      <workItem from="1622790221478" duration="4960000" />
+      <workItem from="1622809752127" duration="6510000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+</project>

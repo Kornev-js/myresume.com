@@ -10,12 +10,13 @@ require_once 'includes/connect.php';
 $query = "SELECT * FROM resume_data WHERE type = 'editable'";
 $result= mysqli_query($connect, $query) or die("error " . mysqli_error($connect));
 $content = mysqli_fetch_array($result);
-if(count($content) === 0){
+if(count($content) == 0){
+    var_dump($content);
     $query = "SELECT * FROM resume_data WHERE type = 'default'";
     $result= mysqli_query($connect, $query) or die("Ошибка " . mysqli_error($connect));
     $content = mysqli_fetch_array($result);
 }
-
+$str = $content['skillsArea'];
 
 
 ?>
@@ -25,8 +26,8 @@ if(count($content) === 0){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="../stylesCV.css">
-    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../css/stylesCV.css">
+    <link rel="stylesheet" href="../css/normalize.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet"> 
 </head>
@@ -56,7 +57,12 @@ if(count($content) === 0){
                 <div class="sidebar__skills"></div>
                 <h2 class="nameOfColumn ">SKILLS</h2>
                 <ul class="list">
-                    <?php  echo $content['skillsArea']?>
+                    <?php
+                    $skills = explode(" ", $str);
+                    for($i = 0; $i < count($skills); $i++) {
+                        echo "<ol>$skills[$i]</ol>";
+                    }
+                    ?>
                 </ul>
             </div>
         </div>
@@ -82,6 +88,6 @@ if(count($content) === 0){
 
 
     </main>
-    <script src="../script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

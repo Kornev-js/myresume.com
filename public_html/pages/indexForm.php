@@ -13,8 +13,8 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Form</title>
-    <link rel="stylesheet" href="../stylesForm.css">
-    <link rel="stylesheet" href="../normalize.css">
+    <link rel="stylesheet" href="../css/stylesForm.css">
+    <link rel="stylesheet" href="../css/normalize.css">
 </head>
 
 <body>
@@ -54,22 +54,22 @@
         </div>
 
         <div class="contactsBlock">
-            <div class="form__item">
-                <div class="form__label contacts">Contacts</div>
-                <select name="contact" class="select" ;>
-                    <option value="1" >Fb</option>
-                    <option value="2">Twitch</option>
-                    <option value="3" selected>Vk</option>
-                    <option value="4">Telega</option>
-                    <option value="5">Other</option>
-                </select>
-
-            <div class="form__item-contact">
-                <label for="socialName" class="formLabel"></label>
-                <input id="socialName" type="text" name="name" class="form__input">
-            </div>
-            <button type="reset" class="contactButton">Delete</button>
-            </div>
+<!--            <div class="form__item">-->
+<!--                <div class="form__label contacts">Contacts</div>-->
+<!--                <select name="contact" class="select" ;>-->
+<!--                    <option value="1" >Fb</option>-->
+<!--                    <option value="2">Twitch</option>-->
+<!--                    <option value="3" selected>Vk</option>-->
+<!--                    <option value="4">Telega</option>-->
+<!--                    <option value="5">Other</option>-->
+<!--                </select>-->
+<!---->
+<!--            <div class="form__item-contact">-->
+<!--                <label for="socialName" class="formLabel"></label>-->
+<!--                <input id="socialName" type="text" name="name" class="form__input">-->
+<!--            </div>-->
+<!--            <button type="reset" class="contactButton">Delete</button>-->
+<!--            </div>-->
             <div class="noContactInputs">
             <button type="button"  id="addButton">Add New</button>
                 <button type="reset" id="resetButton">Reset</button>
@@ -110,7 +110,7 @@
 
 </div>
 <div class="innerHtml"></div>
-<script src="../validation.js"></script>
+<script src="../js/validation.js"></script>
 <!--<script src="scriptForm.js"></script>-->
 
 </body>

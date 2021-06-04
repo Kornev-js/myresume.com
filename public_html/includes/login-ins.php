@@ -31,7 +31,7 @@ if (mysqli_num_rows($check_user) > 0) {
 
 //    echo 'Hello' . 'email';
 }else {
-    header('Location:../regForm.php');
+    header('Location:../pages/regForm.php');
     $_SESSION['message'] = 'Wrong pass or login';
 
 }
