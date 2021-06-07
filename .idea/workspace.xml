@@ -2,20 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="96aa3d0f-0ce2-4e48-bc61-d27df0e45168" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/css/stylesForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/stylesForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/includes/login-ins.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/includes/login-ins.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/includes/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/includes/logout.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/includes/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/includes/registration.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public_html/functionality/connect.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/dump_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/storage/dump_db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/image/IMG_0001.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/storage/IMG_0001.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/image/a.htaccess" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/storage/a.htaccess" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/backup.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/backup.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/connect.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/dump.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/dump.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/editSet.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/editSet.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/login-ins.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/login.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/logout.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/includes/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/registration.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/js/logFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/logFormValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/js/regFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/regFormValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/validation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/CV.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/CV.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/edit_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/edit_form.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/pages/indexForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/indexForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/logForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/logForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/pages/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/regForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/regForm.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -49,6 +54,12 @@
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public_html/storage" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,7 +72,8 @@
       <workItem from="1622704207941" duration="5497000" />
       <workItem from="1622710748845" duration="5686000" />
       <workItem from="1622790221478" duration="4960000" />
-      <workItem from="1622809752127" duration="6510000" />
+      <workItem from="1622809752127" duration="8344000" />
+      <workItem from="1623048363050" duration="23891000" />
     </task>
     <servers />
   </component>

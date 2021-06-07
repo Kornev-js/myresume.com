@@ -1,24 +1,28 @@
 <?php
 //session_start();
-require_once 'connect.php';
+$connect = require_once 'connect.php';
 //session_start();
 
-$userName = $_POST['lastName'];
-$userSurname = $_POST['firstName'];
+$userName = $_POST['name'];
+$userSurname = $_POST['lastName'];
 $userEmail = $_POST['email'];
 $userPass = $_POST['password'];
 $userConfPass = $_POST['confirmPass'];
 
 if ($userPass === $userConfPass) {
     //con
-    header('Location:../index.php');
     $userPass = md5($userPass);
     mysqli_query($connect, "INSERT INTO `users` (`name`, `lastname`, `email`, `password`) VALUES('$userName', '$userSurname', '$userEmail', '$userPass' )");
-
+    header('Content-Type: application/json');
+    echo json_encode(['message' => 'ok']);
+//    $_SESSION['message'] = 'Success';
 }else {
-    $_SESSION['message'] = 'Password do not match;';
-    header('Location:../pages/regForm.php');
+//    $_SESSION['message'] = 'Password do not match;';
+//    header('Location:../pages/regForm.php');
+    header('Content-Type: application/json');
+    echo json_encode(['message' => 'ok']);
 }
+
 
 
 //if (empty($lastName) && empty($firstName) && empty($email) && empty(password)) {

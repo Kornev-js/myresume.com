@@ -5,7 +5,7 @@
 
 <?php
 
-require_once 'includes/connect.php';
+require_once 'functionality/connect.php';
 
 $query = "SELECT * FROM resume_data WHERE type = 'editable'";
 $result= mysqli_query($connect, $query) or die("error " . mysqli_error($connect));
@@ -39,7 +39,7 @@ $str = $content['skillsArea'];
         <div class="wrapper">
             <div class="sidebar">
                 <div class="sidebar__photo">
-                    <img src="../image/IMG_0001.jpg" alt="photo" width="150" height="150">
+                    <img src="../storage/IMG_0001.jpg" alt="photo" width="150" height="150">
                 </div>
                 <div class="sidebar__contact">
                     <h2 class="nameOfColumn">CONTACT</h2>

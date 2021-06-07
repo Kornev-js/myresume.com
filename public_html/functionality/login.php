@@ -1,5 +1,4 @@
 <?php
-session_start();
 $connect = mysqli_connect('localhost', 'developer', 'root', 'my_db');
 
 if (!$connect) {
@@ -7,40 +6,42 @@ if (!$connect) {
 }
 require_once 'connect.php';
 
+$data = json_decode(file_get_contents('php://input'), true);
+//var_dump($data);
 
-$userEmail = $_POST['email'];
-$userPass = md5($_POST['password']);
+$userEmail = $data['email'];
+$userPass = md5($data['password']);
 $check_user = mysqli_query($connect, "SELECT * FROM `users` WHERE `email` = '$userEmail' AND `password` = '$userPass'");
 //var_dump($check_user, mysqli_num_rows($check_user) );
 //die();
-//
+
 if (mysqli_num_rows($check_user) > 0) {
 
     $user = mysqli_fetch_assoc($check_user);
     $_SESSION['user'] = [
-
         "id" => $user['id'],
         "name" => $user['lastName'],
         "full_name" => $user['email']
     ];
 
-    header('Location:../index.php');
-//    echo 'You are Logged In' . "$user['email']";
+    $data = [
+        'success' => true,
+        'user' => [
 
+            "id" => $user['id'],
+            "name" => $user['lastName'],
+            "full_name" => $user['email']
+        ]
+    ];
 
-
-//    echo 'Hello' . 'email';
-}else {
-    header('Location:../pages/regForm.php');
-    $_SESSION['message'] = 'Wrong pass or login';
-
+} else {
+    $data = [
+        'success' => false,
+    ];
 }
 
-
-
-
-
-
+header('Content-Type: application/json');
+echo json_encode($data);
 
 
 

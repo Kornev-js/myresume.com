@@ -11,7 +11,7 @@
 
 <body>
 <div class="form">
-    <form action="../includes/registration.php" class="form__body" method="post">
+    <form action="../functionality/registration.php" class="form__body" method="post">
         <div class="title">
        <div class="line"><hr size="4"></div>
         <h1 class="formName">Register</h1>
@@ -22,28 +22,29 @@
         <div class="name">
         <div class="form__item">
             <label for="formName" class="formLabel"></label>
-            <input id="formName"  type="text" name="lastName" class="form__input-name validation" placeholder="First Name" required>
+            <input id="formName"  type="text" name="lastName" class="form__input-name " placeholder="First Name" >
         </div>
         <div class="form__item">
             <label for="formSurname" class="formLabel"></label>
-            <input id="formSurname"  type="text" name="firstName" class="form__input-name validation" placeholder="Last Name" required>
+            <input id="formSurname"  type="text" name="firstName" class="form__input-name " placeholder="Last Name" >
         </div>
         </div>
         <div class="form__item">
             <label for="formEmail" class="formLabel"></label>
-            <input id="formEmail"  type="email" name="email" class="form__input validation" placeholder="Email" required>
+            <input id="formEmail"  type="email" name="email" class="form__input " placeholder="Email" >
+<!--            <input id="formEmail"  type="text" name="email" class="form__input " placeholder="Email" >-->
         </div>
         <div class="form__item">
             <label for="formPassword" class="formLabel"></label>
-            <input id="formPassword"  type="password" name="password" class="form__input validation" placeholder="Password" required>
+            <input id="formPassword"  type="password" name="password" class="form__input " placeholder="Password" >
         </div>
         <div class="form__item">
             <label for="formConfPassword" class="formLabel"></label>
-            <input id="formConfPassword"  type="password" name="confirmPass" class="form__input validation" placeholder="Confirm Password" required  >
+            <input id="formConfPassword"  type="password" name="confirmPass" class="form__input " placeholder="Confirm Password"   >
         </div>
         <div class="form__item">
             <div class="checkbox">
-                <input id="formAgreement" required  type="checkbox" name="agreement" class="checkbox__input validation">
+                <input id="formAgreement"   type="checkbox" name="agreement" class="checkbox__input ">
                 <label for="formAgreement" class="checkbox__label">I accept the <a href="#">Terms of Use</a> & <a href="#">Privacy Policy</a> </label>
             </div>
         </div>
