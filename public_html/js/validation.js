@@ -101,8 +101,8 @@ function isPassContains(password) {
 let mainInputsDiv = document.querySelector('.noContactInputs');
 console.log(mainInputsDiv);
 function addItems() {
+    let parDiv  = document.createElement('div');
 
-    let br = document.createElement('br');
 
     let select  = document.createElement('select');
     select.setAttribute('id', 'select');
@@ -116,24 +116,33 @@ function addItems() {
     let option3 = document.createElement('option')
     option3.value = 'other';
     option3.textContent = 'Other';
-
+    let buttonDel = document.createElement('button');
     select.appendChild(option1);
     select.appendChild(option2);
     select.appendChild(option3);
+
+    parDiv.appendChild(select);
 
     let input1 = document.createElement('input');
     input1.setAttribute('id', 'input1')
     input1.name = 'dynamicInput';
     input1.style.visibility = 'hidden';
+
+    parDiv.appendChild(input1);
+
     let input2 = document.createElement('input');
     input2.name = 'staticInput';
-
     input2.setAttribute('id', 'input2')
 
+    parDiv.appendChild(input2);
 
-    mainInputsDiv.insertBefore(input1, mainInputsDiv.firstChild);
-    mainInputsDiv.insertBefore(input2, mainInputsDiv.firstChild);//сюда засовываем селект + 2 input text.
-    mainInputsDiv.insertBefore(select, mainInputsDiv.firstChild);
+
+    mainInputsDiv.appendChild(parDiv);
+
+    // mainInputsDiv.insertBefore(input1, mainInputsDiv.firstChild);
+    // mainInputsDiv.insertBefore(input2, mainInputsDiv.firstChild);//сюда засовываем селект + 2 input text.
+    // mainInputsDiv.insertBefore(select, mainInputsDiv.firstChild);
+
     // 1 input style visibility hidden
     // 2 input text
     // if select === 'other'
@@ -143,6 +152,7 @@ function addItems() {
         if (select.value === 'other'){
             input1.style.visibility = 'visible';
         }
+
 
     })
 
@@ -157,6 +167,8 @@ let removeInput1 = document.getElementById('input1');
 removeInput1.remove();
     let removeInput2 = document.getElementById('input2');
     removeInput2.remove();
+    let removeBr = document.getElementsByTagName('br');
+    removeBr.remove();
 
 }
 let addBtn = document.getElementById('addButton');

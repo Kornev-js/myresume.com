@@ -129,8 +129,9 @@ small{
 
 }
 
-
-
+.noContactInputs {
+    display: flex;
+}
 
 
 

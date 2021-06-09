@@ -1,40 +1,20 @@
 <?php
-//
-//session_start()
-//?>
-
-<?php
 
 require_once 'functionality/connect.php';
 
 $query = "SELECT * FROM resume_data WHERE type = 'editable'";
 $result= mysqli_query($connect, $query) or die("error " . mysqli_error($connect));
 $content = mysqli_fetch_array($result);
-if(count($content) == 0){
-    var_dump($content);
+
+if (count($content) == 0) {
     $query = "SELECT * FROM resume_data WHERE type = 'default'";
     $result= mysqli_query($connect, $query) or die("Ошибка " . mysqli_error($connect));
     $content = mysqli_fetch_array($result);
 }
+
 $str = $content['skillsArea'];
 
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../css/stylesCV.css">
-    <link rel="stylesheet" href="../css/normalize.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,900&display=swap" rel="stylesheet"> 
-</head>
-
-<body>
-
-
+?>    
     <main>
         <div class="wrapper">
             <div class="sidebar">
@@ -89,5 +69,3 @@ $str = $content['skillsArea'];
 
     </main>
     <script src="../js/script.js"></script>
-</body>
-</html>

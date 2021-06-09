@@ -67,3 +67,8 @@ hr {
     font-weight: bold;
 
 }
+
+.noContactInputs {
+    display: inline;
+    flex-direction: column;
+}

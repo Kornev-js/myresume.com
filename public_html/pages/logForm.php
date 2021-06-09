@@ -1,18 +1,3 @@
-<?php // session_start() ?>
-
-<!doctype html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Login Form</title>
-    <link rel="stylesheet" href="../css/logForm.css">
-
-</head>
-
-<body>
 <div class="form">
     <form action="../functionality/login.php" method="POST">
         <h1>Login Form</h1>
@@ -27,11 +12,25 @@
         <div id="error"></div>
         <a href="#" class="reminder">Forgot Password?</a>
         <button type="submit" class="loginButton">Log In</button>
-        <p class="regLink">Not a member? <a href="../pages/regForm.php">Signup now</a></p>
+        <p class="regLink">Not a member? <a href="?tab=pages/regForm">Signup now</a></p>
 
     </form>
 </div>
-<script src="../js/jquery-3.6.0.min.js"></script>
 <script src="../js/logFormValidation.js"></script>
-</body>
-</html>
+<script type="text/javascript">
+$(document).ready(function(){
+        $('.regLink a').click(function(e){
+            e.preventDefault();
+            var urlPart = $(this).attr('href');
+            $.ajax({
+                type: "GET",
+                url: 'index.php' + urlPart,
+                cache: false,
+                success: function (msg) {
+                    $('#phpContent').html(msg);
+                }
+            })
+        })
+    }
+)   
+</script>

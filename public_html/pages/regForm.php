@@ -1,15 +1,3 @@
-<?php //session_start() ?>
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>registration form</title>
-    <link rel="stylesheet" href="../css/regForm.css">
-    <script src="../js/jquery-3.6.0.min.js"></script>
-</head>
-
-<body>
 <div class="form">
     <form action="../functionality/registration.php" class="form__body" method="post">
         <div class="title">
@@ -51,7 +39,7 @@
         <button type="submit" class="form__button">Register Now</button>
         <div id="error"></div>
     </form>
-    <p class="Registered">Already have an account? <a href="logForm.php">Sign in</a> </p>
+    <p class="Registered">Already have an account? <a href="?tab=pages/logForm">Sign in</a> </p>
 <!--   --><?php //if ($_SESSION['message']) {
 //       echo '<p class = "msg">' . $_SESSION['message'] . ' </p>';
 //   }
@@ -61,5 +49,20 @@
 </div>
 
 <script src="../js/regFormValidation.js"></script>
-</body>
-</html>
+<script type="text/javascript">
+$(document).ready(function(){
+        $('.Registered a').click(function(e){
+            e.preventDefault();
+            var urlPart = $(this).attr('href');
+            $.ajax({
+                type: "GET",
+                url: 'index.php' + urlPart,
+                cache: false,
+                success: function (msg) {
+                    $('#phpContent').html(msg);
+                }
+            })
+        })
+    }
+)   
+</script>
