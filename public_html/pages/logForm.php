@@ -17,20 +17,20 @@
     </form>
 </div>
 <script src="../js/logFormValidation.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-        $('.regLink a').click(function(e){
-            e.preventDefault();
-            var urlPart = $(this).attr('href');
-            $.ajax({
-                type: "GET",
-                url: 'index.php' + urlPart,
-                cache: false,
-                success: function (msg) {
-                    $('#phpContent').html(msg);
-                }
-            })
-        })
-    }
-)   
-</script>
+<!--<script type="text/javascript">-->
+<!--$(document).ready(function(){-->
+<!--        $('.regLink a').click(function(e){-->
+<!--            e.preventDefault();-->
+<!--            var urlPart = $(this).attr('href');-->
+<!--            $.ajax({-->
+<!--                type: "GET",-->
+<!--                url: 'index.php' + urlPart,-->
+<!--                cache: false,-->
+<!--                success: function (msg) {-->
+<!--                    $('#phpContent').html(msg);-->
+<!--                }-->
+<!--            })-->
+<!--        })-->
+<!--    }-->
+<!--)   -->
+<!--</script>-->

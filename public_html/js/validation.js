@@ -99,11 +99,13 @@ function isPassContains(password) {
 //INSERTING NEW FIELDS!!!
 
 let mainInputsDiv = document.querySelector('.noContactInputs');
-console.log(mainInputsDiv);
+
 function addItems() {
     let parDiv  = document.createElement('div');
+    parDiv.setAttribute('class', 'inputDiv');
 
 
+    mainInputsDiv.insertAdjacentElement("beforebegin", parDiv );
     let select  = document.createElement('select');
     select.setAttribute('id', 'select');
 
@@ -122,23 +124,34 @@ function addItems() {
     select.appendChild(option3);
 
     parDiv.appendChild(select);
-
-    let input1 = document.createElement('input');
-    input1.setAttribute('id', 'input1')
-    input1.name = 'dynamicInput';
-    input1.style.visibility = 'hidden';
-
-    parDiv.appendChild(input1);
-
     let input2 = document.createElement('input');
     input2.name = 'staticInput';
     input2.setAttribute('id', 'input2')
+    input2.style.width = '100px';
 
     parDiv.appendChild(input2);
 
+    let input1 = document.createElement('input');
+    input1.setAttribute('id', 'input1');
+    input1.name = 'dynamicInput';
+    input1.style.visibility = 'hidden';
+    input1.style.width = '180px';
 
-    mainInputsDiv.appendChild(parDiv);
+    parDiv.appendChild(input1);
 
+    let spanDel = document.createElement('span');
+    spanDel.setAttribute('id', 'spanDel');
+    spanDel.textContent = 'Delete';
+
+    parDiv.appendChild(spanDel);
+
+
+function removeIn() {
+
+    let removeDiv = document.querySelector('.inputDiv');
+    removeDiv.remove();
+}
+    spanDel.onclick = removeIn;
     // mainInputsDiv.insertBefore(input1, mainInputsDiv.firstChild);
     // mainInputsDiv.insertBefore(input2, mainInputsDiv.firstChild);//сюда засовываем селект + 2 input text.
     // mainInputsDiv.insertBefore(select, mainInputsDiv.firstChild);
@@ -161,20 +174,21 @@ function addItems() {
 }
 
 function removeItems(){
-let removeSelect = document.getElementById('select');
-removeSelect.remove();
-let removeInput1 = document.getElementById('input1');
-removeInput1.remove();
-    let removeInput2 = document.getElementById('input2');
-    removeInput2.remove();
-    let removeBr = document.getElementsByTagName('br');
-    removeBr.remove();
+//     let removeSelect = document.getElementById('select');
+// removeSelect.remove();
+// let removeInput1 = document.getElementById('input1');
+// removeInput1.remove();
+//     let removeInput2 = document.getElementById('input2');
+//     removeInput2.remove();
+    let removeDiv = document.querySelector('.inputDiv');
+    removeDiv.remove();
+
 
 }
 let addBtn = document.getElementById('addButton');
 let resetBtn = document.getElementById('resetButton')
 
 addBtn.onclick = addItems;
-resetBtn.onclick = removeItems;
+ spanDel.onclick = removeItems;
 
 

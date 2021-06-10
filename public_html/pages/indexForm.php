@@ -32,8 +32,8 @@
             <input id="formbirthdate" type="date" name="birthdate" class="form__input">
             <small>Error</small>
         </div>
-        <div class="form__item">
-            <label for="formbirthdate" class="formLabel">Contacts</label>
+        <div class="form__item contact">
+            <div class="form__label contacts">Contacts</div>
         <div class="noContactInputs">
 <!--            <div class="form__item">-->
 <!--                <div class="form__label contacts">Contacts</div>-->

@@ -130,7 +130,19 @@ small{
 }
 
 .noContactInputs {
-    display: flex;
+    display: block;
+}
+
+.contact {
+    display: block;
+}
+
+#spanDel {
+    cursor: pointer;
+    color: #0f35ef;
+}
+.inputDiv {
+    margin-left: 110px;
 }
 
 

@@ -1,7 +1,7 @@
 
 body{
 
-    background-color: teal;
+
     height: 100vh;
     justify-content: center;
     align-items: center;
@@ -15,7 +15,7 @@ main {
 .wrapper{
     width: 600px;
     height: 350px;
-    background-color: white;
+
     padding: 50px;
     border-radius: 30px;
     margin-bottom: 20px;

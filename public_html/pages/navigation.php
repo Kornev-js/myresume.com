@@ -10,7 +10,7 @@
             <li class="navMenu__item"><a href="#">Support</a></li>
             <li class="navMenu__item"><a href="#">Plans</a></li>
             <li class="navMenu__item"><a href="">Blog</a></li>
-        <?php } ?>
+    <?php    } ?>
     </ul>
 
 

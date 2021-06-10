@@ -1,34 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="96aa3d0f-0ce2-4e48-bc61-d27df0e45168" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public_html/pages/bottom.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/pages/top.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public_html/storage/.dump_db.sql.swp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="96aa3d0f-0ce2-4e48-bc61-d27df0e45168" name="Default Changelist" comment="09.06.2021">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/css/edit_form.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/edit_form.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/css/regForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/regForm.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/css/stylesForm.css" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/css/stylesForm.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/functionality/backup.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/backup.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/functionality/connect.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/connect.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/functionality/dump.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/dump.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/functionality/editSet.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/editSet.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/functionality/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/login.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/functionality/logout.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/functionality/registration.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/functionality/registration.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/js/jquery-3.6.0.min.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/jquery-3.6.0.min.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/js/logFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/logFormValidation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/js/regFormValidation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/regFormValidation.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/js/validation.js" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/js/validation.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/pages/CV.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/CV.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/pages/edit_form.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/edit_form.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public_html/pages/bottom.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/bottom.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/indexForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/indexForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/logForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/logForm.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/navigation.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/navigation.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/public_html/pages/regForm.php" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/pages/regForm.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public_html/storage/dump_db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/public_html/storage/dump_db.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,8 +71,17 @@
       <workItem from="1623220951523" duration="714000" />
       <workItem from="1623222517469" duration="1948000" />
       <workItem from="1623236062437" duration="1535000" />
-      <workItem from="1623245370119" duration="4853000" />
+      <workItem from="1623245370119" duration="4916000" />
+      <workItem from="1623306440638" duration="12112000" />
     </task>
+    <task id="LOCAL-00001" summary="09.06.2021">
+      <created>1623250260159</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1623250260159</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,5 +101,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="09.06.2021" />
+    <option name="LAST_COMMIT_MESSAGE" value="09.06.2021" />
   </component>
 </project>

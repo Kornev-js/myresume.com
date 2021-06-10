@@ -49,20 +49,21 @@
 </div>
 
 <script src="../js/regFormValidation.js"></script>
+
 <script type="text/javascript">
-$(document).ready(function(){
-        $('.Registered a').click(function(e){
-            e.preventDefault();
-            var urlPart = $(this).attr('href');
-            $.ajax({
-                type: "GET",
-                url: 'index.php' + urlPart,
-                cache: false,
-                success: function (msg) {
-                    $('#phpContent').html(msg);
-                }
-            })
-        })
-    }
-)   
+// $(document).ready(function(){
+//         $('.Registered a').click(function(e){
+//             e.preventDefault();
+//             var urlPart = $(this).attr('href');
+//             $.ajax({
+//                 type: "GET",
+//                 url: 'index.php' + urlPart,
+//                 cache: false,
+//                 success: function (msg) {
+//                     $('#phpContent').html(msg);
+//                 }
+//             })
+//         })
+//     }
+// )
 </script>
